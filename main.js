@@ -29,7 +29,10 @@ for (let i = 0; i < buttons.length; i++) {
 
 const deleteB = document.getElementById("delete");
 deleteB.addEventListener("click", () => {
-  result = Number.parseInt(result / 10);
+  //   result = Number.parseInt(result / 10);
+  resultString = "" + result;
+  resultString = resultString.slice(0, resultString.length - 1);
+  result = Number.parseFloat(resultString);
   display.innerText = result;
 });
 
