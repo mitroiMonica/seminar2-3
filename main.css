@@ -1,72 +1,73 @@
-*{
-    box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    font-weight: 500;
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  font-weight: 500;
 }
-body{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1{
-    color: red
+h1 {
+  color: red;
 }
 
 #result {
-    background-color: #023047;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    border: 1px solid #219ebc;
-    color: white;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 1rem;
-    font-size: 2rem;
+  background-color: #28354f;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  border-right: 1px solid #3c587a;
+  border-bottom: 1px solid #3c587a;
+  color: white;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
-.b1{
-    background-color: #023047;
-    width: 5rem;
-    height: 5rem;
-    border-right: 1px solid #219ebc;
-    border-bottom: 1px solid #219ebc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #219ebc;
+.b1 {
+  background-color: #28354f;
+  width: 5rem;
+  height: 5rem;
+  border-right: 1px solid #3c587a;
+  border-bottom: 1px solid #3c587a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3c587a;
 }
 
-.b2{
-   background-color: #157a94;
-   color: white;
+.b2 {
+  background-color: #388095;
+  color: white;
 }
-
 
 #calculator {
-    display: grid;
-    grid-template-columns: repeat(4, 5rem);
-    grid-template-rows: repeat(6, 5rem);
-    box-shadow: 10px 10px 9px rgb(85, 79, 79);
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(6, 5rem);
+  box-shadow: 10px 10px 9px rgb(85, 79, 79);
 }
 
 #equal {
-    grid-row: 5/span 2;
-    grid-column: 4;
-    height: 10rem;
-    background-color: orange;
-    color: white;
+  grid-row: 5 / span 2;
+  grid-column: 4;
+  height: 10rem;
+  background-color: #da8128;
+  color: white;
 }
 
 #zero {
-    grid-column: 1;
-    grid-row: 6;
-    width: 10rem;
+  grid-column: 1;
+  grid-row: 6;
+  width: 10rem;
 }
 
 #dot {
-    grid-column: 3;
+  grid-column: 3;
 }
